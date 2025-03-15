@@ -107,10 +107,10 @@ export const Navbar = () => {
                 className="relative px-4 py-3 text-sm border-l border-b border-[#F1F1F1] first:border-l-0 overflow-hidden group inline-block"
               >
                 <div className="relative h-[20px] leading-[20px] overflow-hidden">
-                  <span className="block text-zinc-600 translate-y-0 group-hover:-translate-y-full transition-transform duration-[1125ms] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                  <span className="block text-zinc-600 translate-y-0 group-hover:-translate-y-full transition-transform duration-\[1125ms\] ease-\[cubic-bezier(0.19,1,0.22,1)\]">
                     {label}
                   </span>
-                  <span className="absolute text-black left-0 top-full group-hover:top-0 transition-all duration-[1125ms] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                  <span className="absolute text-black left-0 top-full group-hover:top-0 transition-all duration-\[1125ms\] ease-\[cubic-bezier(0.19,1,0.22,1)\]">
                     {label}
                   </span>
                 </div>
