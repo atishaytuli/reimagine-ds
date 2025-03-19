@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import {
   Carousel,
@@ -11,74 +10,109 @@ import {
 } from "@/components/ui/carousel";
 
 interface SuccessStoryProps {
-  type: string;
   title: string;
   description: string;
   image?: string;
   bgColor: string;
+  category: string;
 }
 
 const successStories: SuccessStoryProps[] = [
   {
-    type: "IT Solutions",
-    title: "Innovative Digital Transformation",
-    description: "Providing cutting-edge IT solutions, from cloud infrastructure to AI-driven automation, ensuring scalable and efficient digital growth.",
-    image: "https://www.salesforce.com/in/blog/wp-content/uploads/sites/9/2023/06/building-employee-centric-companies-banner.jpg",
-    bgColor: "bg-gradient-to-br from-blue-100 to-blue-300",
+    category: "IT Solutions",
+    title: "Enterprise IT Infrastructure",
+    description: "Delivering robust IT infrastructure solutions, including cloud computing, AI-driven automation, and scalable enterprise systems.",
+    bgColor: "bg-gradient-to-br from-indigo-200 to-indigo-300",
   },
   {
-    type: "Cybersecurity",
-    title: "Advanced Threat Protection",
-    description: "Our cybersecurity solutions safeguard businesses from cyber threats with proactive defense mechanisms and AI-powered monitoring.",
-    bgColor: "bg-gradient-to-br from-orange-200 to-orange-300",
+    category: "Cybersecurity",
+    title: "",
+    description: "Protecting businesses with proactive security solutions, safeguarding data and networks from cyber threats.",
+    bgColor: "bg-gradient-to-br from-blue-300 to-blue-400",
   },
   {
-    type: "Cloud Computing",
-    title: "Seamless Cloud Integration",
-    description: "Offering cloud computing solutions that enhance business agility, optimize costs, and enable remote accessibility.",
-    bgColor: "bg-gradient-to-br from-green-100 to-green-300",
+    category: "Cloud Computing",
+    title: "",
+    description: "Enhancing business agility with cloud-based services that optimize cost, performance, and scalability.",
+    bgColor: "bg-gradient-to-br from-orange-300 to-orange-400/70",
+  },
+
+  // GIS Surveying
+  {
+    category: "GIS Surveying",
+    title: "Geospatial Data Analysis",
+    description: "Utilizing GIS technology for mapping, terrain analysis, and geospatial data-driven insights.",
+    bgColor: "bg-gradient-to-br from-blue-200 to-blue-500",
   },
   {
-    type: "GIS & Surveying",
-    title: "Precision GIS Mapping",
-    description: "Transforming spatial data into actionable insights with high-accuracy GIS mapping and strategic survey solutions.",
-    image: "https://eecenvironmental.com/wp-content/uploads/2017/08/GIS-1024x524.jpg",
-    bgColor: "bg-gradient-to-br from-indigo-100 to-indigo-300",
+    category: "Remote Sensing",
+    title: "",
+    description: "Using drone and satellite-based remote sensing for high-precision land and infrastructure surveys.",
+    bgColor: "bg-gradient-to-br from-yellow-200 to-yellow-300",
   },
   {
-    type: "POI Surveys",
-    title: "Location Intelligence & Mapping",
-    description: "Providing in-depth Point of Interest (POI) surveys to enhance geographic data accuracy and improve location-based services.",
-    bgColor: "bg-gradient-to-br from-teal-200 to-teal-300",
+    category: "Survey Integration",
+    title: "",
+    description: "Real-time data collection and automated survey solutions for efficient mapping and analysis.",
+    bgColor: "bg-gradient-to-br from-green-300 to-green-400",
+  },
+
+  // Web & App Development
+  {
+    category: "Web/App Development",
+    title: "Full-Stack Development",
+    description: "Designing and developing custom web and mobile applications with scalable architecture.",
+    bgColor: "bg-gradient-to-br from-teal-300 to-teal-500",
   },
   {
-    type: "Design & CAD Drafting",
-    title: "Engineering-Grade CAD Solutions",
-    description: "Delivering high-quality CAD drafting services for urban planning, telecom networks, and infrastructure projects.",
-    bgColor: "bg-gradient-to-br from-orange-200 to-orange-300",
+    category: "UI/UX Design",
+    title: "",
+    description: "Creating intuitive, visually appealing digital experiences that enhance user engagement.",
+    bgColor: "bg-gradient-to-br from-purple-300 to-purple-500",
+  },
+  {
+    category: "E-Commerce Solutions",
+    title: "",
+    description: "Developing high-performance online stores with secure payment integration and seamless navigation.",
+    bgColor: "bg-gradient-to-br from-red-300 to-red-500",
+  },
+
+  // Asset Mapping & Topographical Mapping
+  {
+    category: "Asset Mapping",
+    title: "Digital Asset Management",
+    description: "Tracking and managing physical assets through GIS and IoT solutions for optimized operations.",
+    bgColor: "bg-gradient-to-br from-orange-300 to-orange-400",
+  },
+  {
+    category: "Topographical Mapping",
+    title: "",
+    description: "Providing detailed terrain and elevation mapping for construction, planning, and environmental studies.",
+    bgColor: "bg-gradient-to-br from-cyan-300 to-cyan-500",
+  },
+  {
+    category: "Infrastructure Planning",
+    title: "",
+    description: "Leveraging GIS analytics for smart city development, urban planning, and transportation optimization.",
+    bgColor: "bg-gradient-to-br from-yellow-300 to-yellow-400",
   },
 ];
 
 const StoryCard = ({ story }: { story: SuccessStoryProps }) => {
   return (
-    <div className={cn("rounded-3xl text-black h-full flex flex-col", story.bgColor)}>
-     <div className='p-4'>
-     <div className="mb-3 text-sm font-medium opacity-90 flex items-center gap-2 text-zinc-600"> <div className="w-2.5 h-2.5 bg-zinc-500 rounded-full"></div> {story.type}</div>
-      <h3 className="text-xl font-bold mb-4">{story.title}</h3>
-      <p className="text-md opacity-80 flex-grow">{story.description}</p>
-     </div>
-      {story.image && (
-        <div className="mt-4">
-          <Image src={story.image} alt={story.title}  width={500} height={200} className="rounded-b-lg w-full h-40 object-cover" />
-        </div>
-      )}
+    <div className={cn("rounded-2xl text-black h-full flex flex-col", story.bgColor)}>
+      <div className='p-4'>
+        <span className="text-sm font-medium inline-block mb-3 bg-white/40 px-3 py-1 rounded-full text-orange-700">{story.category}</span>
+        <h3 className="text-2xl font-semibold mb-2 mt-3">{story.title}</h3>
+        <p className="text-md opacity-80 flex-grow">{story.description}</p>
+      </div>
     </div>
   );
 };
 
 export const PricingSection = () => {
   return (
-    <section id="testimonials" className="py-10 md:py-24 px-4 max-w-7xl mx-auto">
+    <section id="testimonials" className="py-10 md:py-24 px-4 max-w-5xl mx-auto">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-3xl font-semibold max-w-3xl mx-auto leading-tight text-balance">
           Our Commitment to — <span className="font-semibold bg-orange-300 px-2 rounded"> Excellence.</span>
@@ -98,11 +132,11 @@ export const PricingSection = () => {
 
             return (
               <CarouselItem key={index} className="w-full">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
                   <div className="h-full">
                     {currentGroup[0] && <StoryCard story={currentGroup[0]} />}
                   </div>
-                  <div className="flex flex-col gap-4 h-full">
+                  <div className="flex flex-col gap-2 h-full">
                     <div className="flex-1">
                       {currentGroup[1] && <StoryCard story={currentGroup[1]} />}
                     </div>

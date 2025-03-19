@@ -31,10 +31,11 @@
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
-body{
-  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 24"><path fill="%23000" d="M19.27 15.32 7.77 1.61A1 1 0 0 0 6 2.25v17.89a1 1 0 0 0 1.64.77l3.08-2.58 1.56 4.3a1 1 0 0 0 1.28.6l1.88-.68a1 1 0 0 0 .6-1.28l-1.56-4.3h4.02a1 1 0 0 0 .77-1.64Z"></path></svg>'), auto;
+body {
+  overflow-x: hidden;
 }
 
 @layer base {
@@ -82,38 +83,8 @@ body{
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
-}
-
-@keyframes marquee-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes marquee-right {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-
-.animate-marquee-left {
-  animation: marquee-left 20s linear infinite;
-}
-
-.animate-marquee-right {
-  animation: marquee-right 20s linear infinite;
-}
-
-.group:hover .animate-marquee-left,
-.group:hover .animate-marquee-right {
-  animation-play-state: paused;
 }

@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { Users, Check, Briefcase } from "lucide-react";
@@ -53,25 +52,27 @@ export const FeaturesSection = () => {
 
   return (
     <section
-      id="features"
+      id="story"
       className="relative font-[Gillroy] container py-24 mt-12 text-balance "
     >
       <div className="relative bg-[#F3EEE4] rounded-xl p-4 sm:p-16 md:p-8 z-10 border border-zinc-300 shadow-lg mb-4">
         {/* Heading */}
         <h2
-          className="absolute w-full left-1/2 -translate-x-1/2 text-center text-4xl sm:text-6xl md:text-[2.5rem] lg:text-5xl font-bold uppercase tracking-wider text-orange-400 top-[-4rem] md:top-[-3.5rem] lg:top-[-4rem]"
+          className="absolute w-full left-1/2 -translate-x-1/2 text-center text-4xl sm:text-6xl md:text-[2.5rem] lg:text-5xl font-bold uppercase tracking-wider text-orange-400 top-[-4rem] md:top-[-3.5rem] lg:top-[-3.1rem]"
           style={{
-            WebkitTextStroke: "1px black",
+            // WebkitTextStroke: "1px black",
             textShadow: "3px 2px 0 black",
           }}
         >
           THE STORY <span className="italic lowercase">of</span> <br />
-          <span className="text-green-600"> -</span> DESIGNING SOLUTIONS{" "}
-          <span className="text-green-600"> -</span>
+          <span className="text-orange-400-600"> -</span> <span className="font-[RI] text-green-600">
+            DESIGNING SOLUTIONS
+          </span>
+          <span className="text-orange-400"> -</span>
         </h2>
 
         {/* Main Content */}
-        <div className="mt-16 md:mt-12 text-lg text-gray-700 space-y-4 text-balance">
+        <div className="mt-16 md:mt-12 lg:mt-20 text-lg text-gray-700 space-y-4 text-balance">
           <p>
             <strong className="bg-orange-300 px-2 rounded-lg">
               Designing Solutions

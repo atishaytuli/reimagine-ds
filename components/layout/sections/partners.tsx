@@ -1,5 +1,4 @@
 "use client";
-
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
 import Image from "next/image";

@@ -1,5 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Circle } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface BenefitsProps {
   title: string;
@@ -41,7 +40,7 @@ export const Method = () => {
     <section id="benefits" className="container md:p-10 lg:p-8 w-full">
       <div className="mx-auto">
         <h1 className="text-3xl font-semibold text-center text-balance">
-          How it Works — <span className="font-semibold bg-green-400 px-2 rounded"> Our Methodology
+          What Sets Us — <span className="font-semibold bg-blue-300 px-2 rounded"> Our Methodology
           </span>
         </h1>
 

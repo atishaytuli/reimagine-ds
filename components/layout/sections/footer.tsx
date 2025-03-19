@@ -7,8 +7,6 @@ export const FooterSection = () => {
   return (
     <footer id="footer" className="w-full py-12 bg-zinc-900 text-white">
       <div className="container mx-auto px-6 lg:px-8">
-
-        {/* Top Section: Logo & Quick Links */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2 mb-8 md:mb-0">
             <Link href="#" className="flex font-bold items-center">
@@ -37,7 +35,6 @@ export const FooterSection = () => {
           ]} />
         </div>
 
-        {/* Address & Social Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
           <div>
             <h3 className="font-semibold text-lg mb-2">Our Address</h3>
@@ -82,7 +79,12 @@ const FooterLinkGroup: React.FC<FooterLinkGroupProps> = ({ title, links }) => (
   <div className="flex flex-col gap-2">
     <h3 className="font-bold text-lg">{title}</h3>
     {links.map((link, index) => (
-      <Link key={index} href={link.href} className="opacity-60 hover:opacity-100 flex items-center">
+      <Link
+        key={index}
+        href={link.href}
+        className={`flex items-center hover:text-zinc-100 ${link.text === "Careers" ? "text-white" : "text-zinc-500"
+          }`}
+      >
         {link.text}
         {link.badge && (
           <span className="ml-2 px-2 py-1 bg-orange-500 text-white font-semibold text-xs rounded-md">
@@ -92,6 +94,7 @@ const FooterLinkGroup: React.FC<FooterLinkGroupProps> = ({ title, links }) => (
       </Link>
     ))}
   </div>
+
 );
 
 interface SocialIconProps {

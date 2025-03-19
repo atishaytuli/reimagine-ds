@@ -54,9 +54,9 @@ export default function Home() {
       <Method />
       <SponsorsSection />
       <PricingSection />
-      <MarqueeDemo />  
-      <CommunitySection />  
-      {/* <ContactSection /> */}
+      <MarqueeDemo />
+      <CommunitySection />
+      <ContactSection />
       <FooterSection />
     </>
   );

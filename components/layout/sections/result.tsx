@@ -64,11 +64,17 @@ const TestimonialCard = ({ review }: { review: ReviewProps }) => {
 
 export const TestimonialSection = () => {
   return (
-    <section id="testimonials" className="container py-16 md:py-24 mx-auto">
+    <section id="testimonials" className="relative container py-16 md:py-24 mx-auto">
+      {/* Top Right Gradient */}
+      <div className="absolute top-[20px] left-[-220px] w-[125px] h-[125px] rounded-full bg-gradient-to-br from-blue-500 to-green-400 blur-[13px] opacity-60 md:block hidden"></div>
+
+      {/* Bottom Left Gradient */}
+      <div className="absolute bottom-[150px] right-[-220px] w-[125px] h-[125px] rounded-full bg-gradient-to-b from-orange-300 to-red-500 blur-[14px] opacity-80 md:block hidden"></div>
+
       <div className="text-center mb-8 md:mb-16">
         <h2 className="text-3xl font-bold mx-auto leading-tight text-balance">
           How We Help You <br />
-          Deliver the — <span className="font-semibold bg-blue-300 px-2 rounded">Best Results</span>.
+          Deliver the — <span className="font-semibold bg-orange-300 px-2 rounded">Best Results</span>.
         </h2>
 
         <p className="text-md text-gray-700 mt-12 md:w-4/5 mx-auto">

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const CommunitySection = () => {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center bg-white px-4 sm:px-6 py-12">
+    <div className="w-full min-h-screen flex items-center justify-center bg-white px-4 sm:px-6 py-12 ">
       <div className="w-full max-w-6xl bg-[#F3EEE4] rounded-3xl grid grid-cols-1 lg:grid-cols-2 overflow-hidden shadow-xl">
 
         {/* Left Side - Text Content */}
@@ -14,8 +14,6 @@ export const CommunitySection = () => {
           <p className="mt-6 sm:mt-8 text-lg text-gray-700">
             Reach out to us and let&apos;s discuss how you can be a part of our journey.
           </p>
-
-          {/* Updated Button */}
           <a
             href="mailto:careers@ds.com"
             className="mt-8 sm:mt-14 mx-auto lg:mx-0 flex items-center gap-2 px-3 py-1.5 rounded-full text-lg font-medium border-2 border-black overflow-hidden group transition-all duration-300 hover:shadow-lg active:scale-95 w-fit"

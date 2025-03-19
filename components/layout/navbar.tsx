@@ -1,6 +1,6 @@
 "use client";
 import { ChevronsDown, Menu } from "lucide-react";
-import React, { useState, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import { BorderBeam } from "@/components/ui/borderbeam"
 import logo from "/public/logo.png";
@@ -17,7 +17,6 @@ import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuList,
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -29,17 +28,17 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
-  { href: "#team", label: "About" },
-  { href: "#testimonials", label: "Service" },
+  { href: "#story", label: "About" },
+  { href: "#services", label: "Service" },
   { href: "#sap", label: "SAP" },
-  { href: "#faq", label: "Clients" },
-  { href: "#contact", label: "Contact" },
+  { href: "#clients", label: "Clients" },
+  { href: "#footer", label: "Contact" },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <header className="w-full mx-auto mt-1 z-40 flex justify-between items-center py-4 px-6 md:px-10 bg-card">
+    <header className="w-full mx-auto mt-1 z-40 flex justify-between items-center py-4 px-6 md:px-10 ">
       <Link href="/" className="font-bold text-xl flex items-center">
         {/* <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" /> */}
         <Image
