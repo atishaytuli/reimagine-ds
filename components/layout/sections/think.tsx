@@ -46,7 +46,7 @@ export const BenefitsSection = () => {
   return (
     <section id="benefits" className="container md:py-16 w-full">
       <div className="mx-auto">
-        <h1 className="text-3xl font-semibold text-center text-pretty">
+        <h1 className="text-2xl md:text-3xl  font-semibold text-center text-pretty">
           You Think it — We Build it, We <span className="font-semibold bg-orange-300 px-2 rounded">Prove</span> it.
         </h1>
 
@@ -71,7 +71,7 @@ export const BenefitsSection = () => {
 
           {/* Right side container */}
           <div className="block lg:hidden">
-            <Carousel opts={{ align: "start" }} className="relative w-full max-w-[90%] mx-auto">
+            <Carousel opts={{ align: "start" }} className="relative w-full max-w-[90%] ">
               <CarouselContent className="w-full">
                 {benefitList.map(({ icon, title, description }, index) => (
                   <CarouselItem key={index} className="w-full sm:max-w-[60%] mx-auto">

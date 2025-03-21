@@ -11,53 +11,18 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Website Design & Development",
-    description:
-      "We build responsive, visually appealing websites that enhance user experience and drive business growth. Our solutions are scalable, ensuring long-term success.",
-    technologies: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
-    icon: "w1.svg",
-  },
-  {
-    title: "Mobile App Development",
-    description:
-      "We create high-performance mobile apps tailored to your business needs. Our solutions ensure seamless user interaction across platforms.",
-    technologies: ["Swift", "Kotlin", "React Native", "Flutter"],
-    icon: "a1.svg",
-  },
-  {
-    title: "Technology Consultancy",
-    description:
-      "We provide expert guidance on digital transformation, helping businesses adopt the right technologies and optimize their operations effectively.",
-    technologies: ["Cloud Computing", "DevOps", "AI/ML", "Cybersecurity"],
-    icon: "c1.svg",
-  },
-  {
-    title: "UI/UX Development",
-    description:
-      "We design user-friendly and visually compelling interfaces that enhance engagement. Our approach is rooted in user research and modern design principles.",
-    technologies: ["Figma", "Adobe XD", "Sketch", "CSS", "JavaScript"],
-    icon: "u1.svg",
-  },
-  {
-    title: "Project Planning & Management",
-    description:
-      "We ensure smooth project execution with strategic planning, risk assessment, and efficient resource allocation, keeping your projects on track.",
-    technologies: ["JIRA", "Trello", "Agile", "Scrum"],
-    icon: "pm.svg",
-  },
-  {
-    title: "OFC Network & FTTx Planning",
-    description:
-      "We design and optimize fiber optic networks, ensuring efficient deployment for broadband, IPTV, and telecom infrastructures.",
-    technologies: ["AutoCAD", "GIS", "FTTH", "Fiber Planner"],
-    icon: "n1.svg",
-  },
-  {
     title: "GIS-Based Optic Fiber Route Survey",
     description:
       "We conduct detailed surveys to assess route feasibility, right-of-way permissions, and network design for fiber deployment.",
     technologies: ["GIS", "QGIS", "ArcGIS", "AutoCAD"],
     icon: "g1.svg",
+  },
+  {
+    title: "Website Design & Development",
+    description:
+      "We build responsive, visually appealing websites that enhance user experience and drive business growth. Our solutions are scalable, ensuring long-term success.",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
+    icon: "w1.svg",
   },
   {
     title: "Post-Survey & As-Built Drawings",
@@ -67,11 +32,25 @@ const serviceList: ServiceProps[] = [
     icon: "xy.svg",
   },
   {
+    title: "Mobile App Development",
+    description:
+      "We create high-performance mobile apps tailored to your business needs. Our solutions ensure seamless user interaction across platforms.",
+    technologies: ["Swift", "Kotlin", "React Native", "Flutter"],
+    icon: "a1.svg",
+  },
+  {
     title: "Point of Interest (POI) Surveys",
     description:
       "We provide accurate POI surveys for industries like banking, retail, and real estate, delivering actionable geospatial insights.",
     technologies: ["GIS", "Data Collection Tools", "Remote Sensing"],
     icon: "p1.svg",
+  },
+  {
+    title: "UI/UX Development",
+    description:
+      "We design user-friendly and visually compelling interfaces that enhance engagement. Our approach is rooted in user research and modern design principles.",
+    technologies: ["Figma", "Adobe XD", "Sketch", "CSS", "JavaScript"],
+    icon: "u1.svg",
   },
   {
     title: "Design & CAD Drafting",
@@ -81,11 +60,25 @@ const serviceList: ServiceProps[] = [
     icon: "d1.svg",
   },
   {
+    title: "Project Planning & Management",
+    description:
+      "We ensure smooth project execution with strategic planning, risk assessment, and efficient resource allocation, keeping your projects on track.",
+    technologies: ["JIRA", "Trello", "Agile", "Scrum"],
+    icon: "pm.svg",
+  },
+  {
     title: "Asset Mapping",
     description:
       "We assist in mapping critical assets for telecom and energy industries, optimizing infrastructure planning and operational efficiency.",
     technologies: ["GIS", "Geospatial Analysis", "Surveying Tools"],
     icon: "am.svg",
+  },
+  {
+    title: "Technology Consultancy",
+    description:
+      "We provide expert guidance on digital transformation, helping businesses adopt the right technologies and optimize their operations effectively.",
+    technologies: ["Cloud Computing", "DevOps", "AI/ML", "Cybersecurity"],
+    icon: "c1.svg",
   },
   {
     title: "Cadastral & Topographical Mapping",
@@ -94,13 +87,20 @@ const serviceList: ServiceProps[] = [
     technologies: ["GIS", "Cartography", "Remote Sensing"],
     icon: "tm.svg",
   },
+  {
+    title: "OFC Network & FTTx Planning",
+    description:
+      "We design and optimize fiber optic networks, ensuring efficient deployment for broadband, IPTV, and telecom infrastructures.",
+    technologies: ["AutoCAD", "GIS", "FTTH", "Fiber Planner"],
+    icon: "n1.svg",
+  },
 ];
 
 
 export const ServicesSection = () => {
   return (
     <section id="services" className="container py-12 md:py-16">
-      <h2 className="text-3xl font-semibold text-center mb-12 md:mb-16 text-balance">
+      <h2 className="text-2xl md:text-3xl font-semibold text-center mb-12 md:mb-16 text-balance">
         What Services — We <span className="font-semibold bg-orange-300 px-2 rounded"> Offer.</span>
       </h2>
 

@@ -48,7 +48,7 @@ const TestimonialCard = ({ review }: { review: ReviewProps }) => {
   return (
     <div
       className={cn(
-        "rounded-3xl px-6 py-8 text-black flex flex-col h-full min-h-[300px] transform transition-transform duration-300 hover:rotate-[-3deg] border-2 border-zinc-100"
+        "rounded-3xl px-6 py-8 text-black flex flex-col h-full min-h-[300px] transform transition-transform duration-300 border-2 border-zinc-100"
       )}
     >
       <div className="flex gap-2 items-end">
@@ -65,14 +65,12 @@ const TestimonialCard = ({ review }: { review: ReviewProps }) => {
 export const TestimonialSection = () => {
   return (
     <section id="testimonials" className="relative container py-16 md:py-24 mx-auto">
-      {/* Top Right Gradient */}
-      <div className="absolute top-[20px] left-[-220px] w-[125px] h-[125px] rounded-full bg-gradient-to-br from-blue-500 to-green-400 blur-[13px] opacity-60 md:block hidden"></div>
 
-      {/* Bottom Left Gradient */}
-      <div className="absolute bottom-[150px] right-[-220px] w-[125px] h-[125px] rounded-full bg-gradient-to-b from-orange-300 to-red-500 blur-[14px] opacity-80 md:block hidden"></div>
+      {/* <div className="absolute top-[4rem] left-[-5rem] w-[125px] h-[125px] rounded-full bg-gradient-to-br from-blue-500 to-green-400 blur-[13px] opacity-60 md:block hidden"></div>
+      <div className="absolute bottom-[4rem] right-[-5rem] w-[150px] h-[150px] rounded-full bg-gradient-to-b from-orange-300 to-red-500 blur-[14px] opacity-80 md:block hidden "></div> */}
 
       <div className="text-center mb-8 md:mb-16">
-        <h2 className="text-3xl font-bold mx-auto leading-tight text-balance">
+        <h2 className="text-2xl md:text-3xl  font-bold mx-auto leading-tight text-balance">
           How We Help You <br />
           Deliver the — <span className="font-semibold bg-orange-300 px-2 rounded">Best Results</span>.
         </h2>

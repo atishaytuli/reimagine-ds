@@ -39,7 +39,7 @@ export const Method = () => {
   return (
     <section id="benefits" className="container md:p-10 lg:p-8 w-full">
       <div className="mx-auto">
-        <h1 className="text-3xl font-semibold text-center text-balance">
+        <h1 className="text-2xl md:text-3xl font-semibold text-center text-balance">
           What Sets Us — <span className="font-semibold bg-blue-300 px-2 rounded"> Our Methodology
           </span>
         </h1>

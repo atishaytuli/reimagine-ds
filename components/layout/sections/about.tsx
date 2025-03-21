@@ -58,7 +58,7 @@ export const FeaturesSection = () => {
       <div className="relative bg-[#F3EEE4] rounded-xl p-4 sm:p-16 md:p-8 z-10 border border-zinc-300 shadow-lg mb-4">
         {/* Heading */}
         <h2
-          className="absolute w-full left-1/2 -translate-x-1/2 text-center text-4xl sm:text-6xl md:text-[2.5rem] lg:text-5xl font-bold uppercase tracking-wider text-orange-400 top-[-4rem] md:top-[-3.5rem] lg:top-[-3.1rem]"
+          className="absolute w-full left-1/2 -translate-x-1/2 text-center text-4xl sm:text-6xl md:text-[2.5rem] lg:text-5xl font-semibold uppercase tracking-wider text-orange-400 top-[-4rem] md:top-[-3.5rem] lg:top-[-3.1rem]"
           style={{
             // WebkitTextStroke: "1px black",
             textShadow: "3px 2px 0 black",
@@ -72,8 +72,8 @@ export const FeaturesSection = () => {
         </h2>
 
         {/* Main Content */}
-        <div className="mt-16 md:mt-12 lg:mt-20 text-lg text-gray-700 space-y-4 text-balance">
-          <p>
+        <div className="mt-16 md:mt-12 lg:mt-20 text-base text-gray-700 space-y-4 text-balance">
+          <p className="text-balance">
             <strong className="bg-orange-300 px-2 rounded-lg">
               Designing Solutions
             </strong>{" "}
@@ -111,7 +111,7 @@ export const FeaturesSection = () => {
             />
           </div>
 
-          <div className="text-lg text-gray-700 space-y-4 col-span-2 text-balance mt-6 md:mt-0 lg:mt-0">
+          <div className="text-base text-gray-700 space-y-4 col-span-2 text-balance mt-6 md:mt-0 lg:mt-0">
             <p>
               Our company thrives on{" "}
               <strong>collaboration and expertise</strong>. We have built a
@@ -142,7 +142,7 @@ export const FeaturesSection = () => {
               <div className="bg-orange-400/20 p-3 rounded-full mb-3">
                 <Users className="h-8 w-8 text-orange-500" />
               </div>
-              <div className="text-4xl font-bold text-gray-800">{members}+</div>
+              <div className="text-3xl font-semibold text-gray-800">{members}+</div>
               <div className="text-gray-600 text-sm">Global Members</div>
             </div>
 
@@ -150,7 +150,7 @@ export const FeaturesSection = () => {
               <div className="bg-green-500/20 p-3 rounded-full mb-3">
                 <Briefcase className="h-8 w-8 text-green-500" />
               </div>
-              <div className="text-4xl font-bold text-gray-800">
+              <div className="text-3xl font-semibold text-gray-800">
                 {projects}+
               </div>
               <div className="text-gray-600 text-sm">Projects Completed</div>
@@ -160,7 +160,7 @@ export const FeaturesSection = () => {
               <div className="bg-blue-300/20 p-3 rounded-full mb-3">
                 <Check className="h-8 w-8 text-blue-500" />
               </div>
-              <div className="text-4xl font-bold text-gray-800">{experts}+</div>
+              <div className="text-3xl font-semibold text-gray-800">{experts}+</div>
               <div className="text-gray-600 text-sm">Development Experts</div>
             </div>
           </div>

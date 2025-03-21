@@ -5,7 +5,7 @@ import { Navbar } from "@/components/layout/navbar";
 
 export const HeroSection = () => {
   return (
-    <section className="w-full h-screen overflow-hidden relative">
+    <section className="w-full h-[90vh] md:h-[95vh] lg-h-screen overflow-hidden relative">
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <motion.div

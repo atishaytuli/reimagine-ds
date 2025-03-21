@@ -10,12 +10,12 @@ import {
 
 export const Expertise = () => {
   const expertiseData = [
-    { icon: <Heart className="w-8 h-8" />, title: "Telecom" },
     { icon: <Briefcase className="w-8 h-8" />, title: "GIS & Mapping" },
+    { icon: <Heart className="w-8 h-8" />, title: "AutoCAD" },
     { icon: <Cpu className="w-8 h-8" />, title: "UI/UX" },
+    { icon: <Cloud className="w-8 h-8" />, title: "App Development" },
+    { icon: <Store className="w-8 h-8" />, title: "Web Design" },
     { icon: <Wallet className="w-8 h-8" />, title: "FinTech" },
-    { icon: <Store className="w-8 h-8" />, title: "Ecommerce" },
-    { icon: <Cloud className="w-8 h-8" />, title: "SaaS" },
     { icon: <Film className="w-8 h-8" />, title: "AI & Automation" }
   ];
 
@@ -23,7 +23,7 @@ export const Expertise = () => {
     <section className="py-16 md:py-24 px-4 max-w-7xl mx-auto mb-12">
       {/* Heading */}
       <div className="text-center mb-16">
-        <h2 className="text-3xl font-bold max-w-3xl mx-auto leading-tight text-balance">
+        <h2 className="text-2xl sm:text-3xl font-bold max-w-3xl mx-auto leading-tight text-balance">
           Our Expertise for — <span className="font-semibold bg-blue-300 px-2 rounded">Your Success.</span>
         </h2>
         <p className="text-gray-600 max-w-4xl mx-auto mt-8 text-balance">
@@ -37,7 +37,7 @@ export const Expertise = () => {
         <Carousel opts={{ align: "start" }} className="relative w-full max-w-[90%] mx-auto">
           <CarouselContent className="w-full">
             {expertiseData.map((item, index) => (
-              <CarouselItem key={index} className="w-full max-w-[80%] sm:max-w-[40%] mx-auto">
+              <CarouselItem key={index} className="w-full max-w-[70%] sm:max-w-[40%] mx-auto">
                 <div className="bg-zinc-100/40 rounded-xl py-6 px-4 border border-gray-200 flex flex-col items-center
                   transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md">
                   <div className="text-[#43b3f0]">{item.icon}</div>
@@ -47,8 +47,8 @@ export const Expertise = () => {
             ))}
           </CarouselContent>
           <div className="flex justify-center gap-2 mt-4">
-            <CarouselPrevious className="static transform-none mx-2" />
-            <CarouselNext className="static transform-none mx-2" />
+            <CarouselPrevious className="static transform-none mx-2 text-blue-400" />
+            <CarouselNext className="static transform-none mx-2 text-blue-400" />
           </div>
         </Carousel>
       </div>

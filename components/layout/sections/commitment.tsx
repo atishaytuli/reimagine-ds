@@ -114,7 +114,7 @@ export const PricingSection = () => {
   return (
     <section id="testimonials" className="py-10 md:py-24 px-4 max-w-5xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-3xl font-semibold max-w-3xl mx-auto leading-tight text-balance">
+        <h2 className="text-2xl md:text-3xl font-semibold max-w-2xl md:max-w-3xl mx-auto leading-tight text-balance">
           Our Commitment to — <span className="font-semibold bg-orange-300 px-2 rounded"> Excellence.</span>
         </h2>
       </div>
