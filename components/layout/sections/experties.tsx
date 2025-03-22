@@ -38,10 +38,17 @@ export const Expertise = () => {
           <CarouselContent className="w-full">
             {expertiseData.map((item, index) => (
               <CarouselItem key={index} className="w-full max-w-[70%] sm:max-w-[40%] mx-auto">
-                <div className="bg-zinc-100/40 rounded-xl py-6 px-4 border border-gray-200 flex flex-col items-center
-                  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md">
-                  <div className="text-[#43b3f0]">{item.icon}</div>
-                  <h3 className="font-semibold mt-4">{item.title}</h3>
+                <div className="group relative bg-zinc-100/40 rounded-xl py-6 px-4 border border-gray-200 flex flex-col items-center
+                  overflow-hidden backdrop-blur-sm transition-all duration-300 ease-out hover:border-blue-300 hover:bg-white/90 hover:shadow-[0_0_15px_rgba(67,114,240,0.15)]">
+                
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 to-blue-100/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-blue-400 transition-all duration-300 ease-out group-hover:w-2/3"></div>
+                  <div className="relative z-10 text-blue-500">
+                    {item.icon}
+                  </div>
+                  <h3 className="relative z-10 font-semibold mt-4 text-sm text-gray-700 transition-all duration-300 ease-out group-hover:text-blue-500">
+                    {item.title}
+                  </h3>
                 </div>
               </CarouselItem>
             ))}
@@ -56,13 +63,20 @@ export const Expertise = () => {
       {/* Grid layout for lg & above */}
       <div className="hidden lg:grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 md:gap-4 lg:gap-5">
         {expertiseData.map((item, index) => (
-          <div key={index} className="bg-zinc-100/40 rounded-xl py-4 border border-gray-200 flex flex-col items-center 
-            transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-            <div className="text-[#4372ea]">{item.icon}</div>
-            <h3 className="font-semibold mt-4">{item.title}</h3>
+          <div key={index} className="group relative bg-zinc-100/40 rounded-xl py-4 border border-gray-200 flex flex-col items-center 
+            overflow-hidden backdrop-blur-sm transition-all duration-300 ease-out hover:border-blue-300 hover:bg-white/90 hover:shadow-[0_0_15px_rgba(67,114,240,0.15)]">
+            
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 to-blue-100/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-blue-400 transition-all duration-300 ease-out group-hover:w-2/3"></div>
+            <div className="relative z-10 text-blue-500">
+              {item.icon}
+            </div>
+            <h3 className="relative z-10 font-semibold mt-4 text-gray-700 transition-all duration-300 ease-out group-hover:text-blue-500">
+              {item.title}
+            </h3>
           </div>
         ))}
       </div>
     </section>
-  );
+  )
 };

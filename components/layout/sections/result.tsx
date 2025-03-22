@@ -23,44 +23,46 @@ const reviewList: ReviewProps[] = [
     comment:
       "We prioritize our client’s success, understand your unique needs, and deliver tailored solutions that drive your business",
 
-    icon: <Users className="w-12 h-12 text-zinc-600 bg-blue-300/50 rounded-2xl p-3 mb-6" />,
-    icon2: <Users className="w-10 h-10 text-zinc-500 bg-green-500/50 rounded-2xl p-3 mb-6" />,
+    icon: <Users className="w-12 h-12 text-zinc-600 bg-blue-300/50 rounded-2xl p-3 mb-6 transition-all duration-300 ease-in-out group-hover:rounded-full" />,
+    icon2: <Users className="w-10 h-10 text-zinc-500 bg-green-500/50 rounded-2xl p-3 mb-6 transition-all duration-300 ease-in-out group-hover:rounded-full" />,
   },
   {
     name: "Clear Communication",
     comment:
       "We build relationships based on integrity and trust, deliver on our promises, and always maintain clear communication. tailored solutions that drive your business",
 
-    icon: <MessageSquareQuote className="w-12 h-12 text-zinc-600 bg-blue-300/50 rounded-2xl p-3 mb-6" />,
-    icon2: <Users className="w-10 h-10 text-zinc-500 bg-orange-500/50 rounded-2xl p-3 mb-6" />,
+    icon: <MessageSquareQuote className="w-12 h-12 text-zinc-600 bg-blue-300/50 rounded-2xl p-3 mb-6 transition-all duration-300 ease-in-out group-hover:rounded-full" />,
+    icon2: <Users className="w-10 h-10 text-zinc-500 bg-orange-500/50 rounded-2xl p-3 mb-6 transition-all duration-300 ease-in-out group-hover:rounded-full" />,
   },
   {
     name: "Innovation and Excellence",
     comment:
       "We consistently deliver innovative, high-quality solutions as a team on the cutting edge of technology trends.",
 
-    icon: <Lightbulb className="w-12 h-12 text-zinc-600 bg-blue-300/50 rounded-2xl p-3 mb-6" />,
-    icon2: <Users className="w-10 h-10 text-zinc-500 bg-green-500/50 rounded-2xl p-3 mb-6" />,
+    icon: <Lightbulb className="w-12 h-12 text-zinc-600 bg-blue-300/50 rounded-2xl p-3 mb-6 transition-all duration-300 ease-in-out group-hover:rounded-full" />,
+    icon2: <Users className="w-10 h-10 text-zinc-500 bg-green-500/50 rounded-2xl p-3 mb-6 transition-all duration-300 ease-in-out group-hover:rounded-full" />,
   },
 ];
 
 const TestimonialCard = ({ review }: { review: ReviewProps }) => {
   return (
     <div
-      className={cn(
-        "rounded-3xl px-6 py-8 text-black flex flex-col h-full min-h-[300px] transform transition-transform duration-300 border-2 border-zinc-100"
-      )}
-    >
-      <div className="flex gap-2 items-end">
-        {review.icon} {review.icon2}
+      className="group rounded-xl px-6 py-8 text-black flex flex-col h-full min-h-[300px] transform transition-all duration-500 ease-out border-2 border-zinc-100  hover:rounded-[2rem]">
+      <div className="flex gap-2 items-end transition-all duration-300 ease-in-out">
+        <div>
+          {review.icon}
+        </div>
+        <div>
+          {review.icon2}
+        </div>
       </div>
 
       <h3 className="text-xl font-semibold">{review.name}</h3>
-
       <p className="text-sm mt-12 text-zinc-500 flex-grow opacity-90">{review.comment}</p>
     </div>
   );
 };
+
 
 export const TestimonialSection = () => {
   return (

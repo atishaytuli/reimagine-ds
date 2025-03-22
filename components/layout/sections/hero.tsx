@@ -5,7 +5,7 @@ import { Navbar } from "@/components/layout/navbar";
 
 export const HeroSection = () => {
   return (
-    <section className="w-full h-[90vh] md:h-[95vh] lg-h-screen overflow-hidden relative">
+    <section className="w-full min-h-[90vh] md:min-h-[95vh] lg-h-screen overflow-hidden relative">
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <motion.div
@@ -38,17 +38,17 @@ export const HeroSection = () => {
 
       {/* Main Content */}
       <div className="relative z-10 max-w-[1400px] mx-auto md:px-12 mt-32 md:mt-64 lg:mt-44 text-center">
-        <h1 className="relative font-[RI] text-[80px] md:text-[100px] lg:text-[150px] leading-[0.9] tracking-tight uppercase">
-          <div className="absolute text-base md:text-2xl font-semibold font-[Gillroy] tracking-normal bg-green-400 px-2 rounded rotate-[-10deg] top-[-1rem] left-1 md:left-5 lg:left-[16rem] md:top-[0.70rem] lg:top-[-0.5rem]">
+        <h1 className="relative font-[RI] text-[5rem] md:text-[6.2rem] lg:text-[9rem] leading-[0.9] tracking-tight uppercase">
+          <div className="absolute text-base md:text-2xl font-semibold font-[Gillroy] tracking-normal bg-green-400 px-2 rounded rotate-[-10deg] top-[-1rem] left-1 md:left-10 lg:left-[16rem] md:top-[0.30rem] lg:top-[-0.5rem]">
             WE ARE
           </div>
           <span>DESIGNING</span>
-          <span className="block font-[Gillroy] text-5xl md:text-[90px] lg:text-[130px] tracking-tighter my-6 md:my-0">
+          <span className="block font-[Gillroy] text-5xl md:text-[5.rem] lg:text-[8rem] tracking-tighter my-6 md:my-0">
             THE FUTURE OF
           </span>
           <span>
             IT & TELECOM
-            <div className="absolute text-base md:text-2xl font-semibold font-[Gillroy] tracking-normal bg-orange-300 px-2 rounded-sm  right-1 bottom-[-0.5rem] md:right-6 lg:right-[7rem] md:bottom-[0.05rem] lg:bottom-[0.30rem]">
+            <div className="absolute text-base md:text-2xl font-semibold font-[Gillroy] tracking-normal bg-orange-300 px-2 rounded-sm  right-1 bottom-[-0.5rem] md:right-6 lg:right-[7rem] md:bottom-[-0.05rem] lg:bottom-[0.30rem]">
               DESIGNING SOLUTIONS
             </div>
           </span>

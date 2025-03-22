@@ -45,11 +45,11 @@ export const Method = () => {
         </h1>
 
         {/* Card Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 mt-12">
           {benefitList.map(({ title, description, badge }, index) => (
             <Card
               key={title}
-              className="bg-white hover:shadow-md transition-all duration-300 rounded-2xl max-w-[350px] mx-auto flex flex-col"
+              className="bg-white rounded-2xl max-w-[350px] mx-auto flex flex-col transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-gray-300/40 hover:scale-[1.01]"
             >
 
               <CardContent className="md:p-4 flex flex-col">

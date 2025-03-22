@@ -197,7 +197,7 @@ export const ContactSection = () => {
 
 
   return (
-    <section className="hidden lg:block w-full bg-gradient-to-r from-orange-400/60 to-orange-400/60 relative overflow-hidden">
+    <section className="hidden lg:block w-full bg-orange-400/70 relative overflow-hidden">
 
       {/* Background Decorative Shapes */}
       <div className="absolute inset-0">
